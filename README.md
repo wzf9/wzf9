@@ -16,24 +16,6 @@ Think of me as a **data detective** who lets the numbers tell the story.
 
 ---
 
-### 🕵️‍♂️ Featured Project / 亮点项目
-
-#### [GitHub Hunter](https://github.com/wzf9/github-hunter)
-
-> **Spot the next big project 24 hours before it goes viral.**  
-> **提前 24 小时发现下一个爆款开源项目。**
-
-- ✅ **Proven hits / 已验证案例**:  
-  - [MagicQuill](https://github.com/magic-quill/magicquill) – predicted before trending  
-  - [Microsoft/TRELLIS](https://github.com/microsoft/trellis) – early signal detection  
-- 🔥 **Unmasked \"ghost repos\" / 揭露幽灵仓库**:  
-  - Uncovered a 4‑year malware distribution network hidden in seemingly normal repos  
-    发现了一个隐藏长达 4 年、伪装成正常仓库的恶意软件分发网络
-
-🔗 **[Explore GitHub Hunter →](https://github.com/wzf9/github-hunter)**
-
----
-
 ### 🛠️ Tech Stack / 技术栈
 
 - **Languages**: Python, TypeScript, PowerShell
@@ -50,9 +32,47 @@ Think of me as a **data detective** who lets the numbers tell the story.
 
 ### 📫 Let's Connect / 联系我
 
-- **Email**: wzf9@outlook.com  
+- **Email**: bestlifetmp@outlook.com  
 - **GitHub**: [github.com/wzf9](https://github.com/wzf9)
 
+
+## 🔍 GitHub Hunter – Local Edition
+
+> **提前 24 小时锁定下一个开源爆款**
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.13+-3776AB?logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/DuckDB-Powered-fff0d4?logo=duckdb&logoColor=000">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+  <img src="https://img.shields.io/badge/Data-24h_Sliding_Window-2ea44f">
+</p>
+
+这是一套**不依赖任何云服务**的本地化工具链，通过对 GitHub 全量事件流进行小时级增量分析，在项目爆发前 24 小时锁定潜力黑马。
+
+---
+
+### ✨ 核心亮点
+
+- **零云成本**：不依赖 BigQuery / GCP / AWS，只需 Python + 公网访问[reference:0]
+- **小时级增量**：首次约 600MB 流量，后续增量仅 ~30MB / 次[reference:1]
+- **多维榜单**：24 小时滑窗榜 / 加速度榜 / 连续高速增长榜 / 幽灵仓库黑名单[reference:2]
+- **全量数据回溯**：本地累积 1 年 hourly 倒排索引，支持任意日期的 Top / Star 曲线分析[reference:3]
+
+---
+
+### 🚀 快速开始
+
+```bash
+git clone https://github.com/wzf9/github-hunter-local
+cd github-hunter-local
+
+# 创建虚拟环境（推荐）
+uv venv --python 3.13.1
+.venv\Scripts\activate
+
+# 安装依赖并运行
+uv pip install -r requirements.txt
+python main.py   # 首次会自动引导配置 GH_TOKEN
 ---
 
 ⭐ *If you're into finding gems before they shine – give me a star!*  
